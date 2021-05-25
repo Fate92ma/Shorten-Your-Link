@@ -15,13 +15,13 @@ Contact Me: fatema131khaled@gmail.com
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    font-family: sans-serif
+    -o-box-sizing: border-box
 }
 
 /* Start Styling */
 
 body {
+    font-family: sans-serif;
     background: linear-gradient(to left, #ddd 0%, #add2f7 100%)
 }
 
@@ -38,7 +38,7 @@ input {
     outline: 0;
     padding: 6px;
     border: 1px solid gray;
-    width: 40vw;
+    width: 50vw;
     margin: 20px auto;
     display: block
 }
@@ -51,7 +51,7 @@ img {
 }
 
 .result {
-    width: 40vw;
+    width: 50vw;
     margin: 60px auto
 }
 
@@ -86,15 +86,11 @@ img {
     color: red
 }
 
-@media (max-width: 1100px) {
+/* End Styling */
 
-    input,
-    .result {
-        width: 50vw
-    }
-}
+/* Start Media Query */
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 
     input,
     .result {
@@ -102,7 +98,7 @@ img {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
 
     input,
     .result {
@@ -110,7 +106,7 @@ img {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     input,
     .result {
@@ -118,15 +114,12 @@ img {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
 
     input,
     .result {
         width: 90vw
     }
-}
-
-@media (max-width: 400px) {
 
     .result div {
         flex-direction: column
@@ -137,4 +130,4 @@ img {
     }
 }
 
-/* End Styling */
+/* End Media Query */

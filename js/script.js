@@ -1,4 +1,5 @@
 // Dom Variables
+
 let input = document.getElementsByTagName("input")[0],
 
     inputValue,
@@ -6,6 +7,7 @@ let input = document.getElementsByTagName("input")[0],
     result = document.getElementsByClassName('result')[0],
 
     // Data Variables
+    
     myRequest,
 
     myData,
@@ -15,8 +17,6 @@ let input = document.getElementsByTagName("input")[0],
 // Events
 
 input.addEventListener('keypress', isValidURL);
-
-/**************************************************************************************************/
 
 // function to check user url is it valid or not
 function isValidURL(event) {
@@ -52,8 +52,6 @@ function isValidURL(event) {
 
 }
 
-/**************************************************************************************************/
-
 // function to shorten user link
 function shortMyLink() {
 
@@ -70,19 +68,19 @@ function shortMyLink() {
             result.innerHTML =
 
                 `<div>
-<input type="url" value="${myData.result.short_link}">
-<p class='toCopy'>Copy Link</p>
-</div>
+                    <input type="url" value="${myData.result.short_link}">
+                    <p class='toCopy'>Copy Link</p>
+                    </div>
 
-<div>
-<input type="url" value="${myData.result.short_link2}">
-<p class='toCopy'>Copy Link</p>
-</div>
+                    <div>
+                    <input type="url" value="${myData.result.short_link2}">
+                    <p class='toCopy'>Copy Link</p>
+                    </div>
 
-<div>
-<input type="url" value="${myData.result.short_link3}">
-<p class='toCopy'>Copy Link</p>
-</div>`
+                    <div>
+                    <input type="url" value="${myData.result.short_link3}">
+                    <p class='toCopy'>Copy Link</p>
+                </div>`
 
             //
             targetToCopy()
@@ -99,8 +97,6 @@ function shortMyLink() {
     myRequest.send()
 
 }
-
-/**************************************************************************************************/
 
 // function to target all 'toCopy' classes to allow copy short links
 function targetToCopy() {
@@ -133,5 +129,3 @@ function targetToCopy() {
     })
 
 }
-
-/**************************************************************************************************/
